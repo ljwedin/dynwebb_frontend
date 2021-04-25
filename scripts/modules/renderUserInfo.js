@@ -4,7 +4,7 @@ export default async function renderUserInfo () {
     const id = { id: localStorage.getItem('id') };
     const contentDiv = document.querySelector('.content');
 
-    let url = 'http://localhost:3000/userpage'
+    let url = 'https://dynwebb-01-backend.herokuapp.com/userpage'
 
     let response = await fetch(url, {
         method: 'POST',
