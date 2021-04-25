@@ -74,4 +74,9 @@ button {
 
 #newsletterBox {
     display: inline-flex;
+    & button {
+        margin-left: 20px;
+        height: 30px;
+        width: 60px;
+    }
 }

@@ -14,7 +14,7 @@ function getUserInput () {
 
 export default async function login () {
     let user = getUserInput();
-    let url = 'https://dynwebb-01-backend.herokuapp.com/login'; // https://dynwebb-01-backend.herokuapp.com/login http://localhost:3000/login
+    let url = 'https://dynwebb-01-backend.herokuapp.com/login';
     let response = await fetch(url, {
         method: 'POST',
         mode: 'cors',
@@ -31,12 +31,10 @@ export default async function login () {
     let validUser = await response.json();
 
     if (validUser) {
-        console.log('Success!');
         localStorage.setItem("id", validUser);
         renderUserInfo();
     } else {
-        console.log('Sadface :(');
+        let contentBox = document.querySelector('.content');
+        contentBox.insertAdjacentHTML('beforeend', '<p>Fel användarnamn eller lösenord! Försök igen.');
     }
 }
-
-document.getElementById('loginBtn').addEventListener('click', login);

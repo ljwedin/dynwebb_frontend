@@ -50,5 +50,3 @@ async function regUser () {
         console.log('Success!');
     }
 }
-
-document.getElementById('regBtn').addEventListener('click', renderRegistrationPage);

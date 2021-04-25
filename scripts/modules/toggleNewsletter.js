@@ -4,9 +4,6 @@ export default async function toggleNewsletter () {
     let newsletter;
     let string = document.getElementById('newsletterText').innerText;
 
-    console.log(string);
-    console.log(typeof string);
-
     if (string === 'Ja') {
         newsletter = false;
     } else {
@@ -14,8 +11,6 @@ export default async function toggleNewsletter () {
     }
 
     const postNewsletter = { id: localStorage.getItem('id'), newsletter: newsletter};
-
-    console.log(postNewsletter);
 
     let url = 'https://dynwebb-01-backend.herokuapp.com/userpage/updatenewsletter'
 

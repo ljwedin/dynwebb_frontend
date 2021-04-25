@@ -84,4 +84,10 @@ button:active {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
+#newsletterBox button {
+  margin-left: 20px;
+  height: 30px;
+  width: 60px;
+}
 /*# sourceMappingURL=styles.css.map */

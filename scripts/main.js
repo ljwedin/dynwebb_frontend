@@ -1,5 +1,8 @@
 const main = document.querySelector('.main');
 
-import loginUser from './modules/loginUser.js';
+import login from './modules/loginUser.js';
 import renderUserInfo from './modules/renderUserInfo.js';
 import renderRegistrationPage from './modules/regUser.js';
+import landingPage from './modules/landingPage.js';
+
+landingPage();

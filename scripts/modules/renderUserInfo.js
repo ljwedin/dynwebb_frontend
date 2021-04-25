@@ -1,8 +1,12 @@
 import toggleNewsletter from './toggleNewsletter.js';
+import logoutUser from './logoutUser.js';
 
 export default async function renderUserInfo () {
     const id = { id: localStorage.getItem('id') };
     const contentDiv = document.querySelector('.content');
+
+    const bigHeader = document.querySelector('.bigHeader');
+    bigHeader.textContent = 'Välkommen!';
 
     let url = 'https://dynwebb-01-backend.herokuapp.com/userpage'
 
@@ -24,8 +28,10 @@ export default async function renderUserInfo () {
     contentDiv.innerHTML = `
     <p>Användarnamn: ${userInfo.userName}</p><br />
     <p>Email: ${userInfo.email}</p><br />
-    <div id="newsletterBox"><p>Nyhetsbrev: </p><p id="newsletterText">${userInfo.newsletter}</p><button id="toggleNewsletter">Ändra</button></div>
+    <div id="newsletterBox"><p>Nyhetsbrev: </p><p id="newsletterText">${userInfo.newsletter}</p><button id="toggleNewsletter">Ändra</button></div><br />
+    <button id="logoutBtn">Logga ut</button>
     `;
 
     document.getElementById('toggleNewsletter').addEventListener('click', toggleNewsletter);
+    document.getElementById('logoutBtn').addEventListener('click', logoutUser);
 }
