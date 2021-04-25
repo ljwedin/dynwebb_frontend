@@ -47,10 +47,4 @@ async function regUser () {
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     };
-
-    let validUser = await response.json();
-
-    if (validUser.result === 1) {
-        console.log('Success!');
-    }
 }
