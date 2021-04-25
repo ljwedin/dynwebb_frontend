@@ -14,7 +14,7 @@ function getUserInput () {
 
 export default async function login () {
     let user = getUserInput();
-    let url = 'http://localhost:3000/login'; // https://dynwebb-01-backend.herokuapp.com/login http://localhost:3000/login
+    let url = 'https://dynwebb-01-backend.herokuapp.com/login'; // https://dynwebb-01-backend.herokuapp.com/login http://localhost:3000/login
     let response = await fetch(url, {
         method: 'POST',
         mode: 'cors',

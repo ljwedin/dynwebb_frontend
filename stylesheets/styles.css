@@ -78,4 +78,10 @@ button:active {
   background-color: #202020;
   color: #faa815;
 }
+
+#newsletterBox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 /*# sourceMappingURL=styles.css.map */
