@@ -9,6 +9,12 @@ Som publik användare kan du skapa ett konto, logga in med kontot, hålla dig in
 ----------------------
 Starta index.html med live server för att testa lokalt, surfa annars in på online-länken:
 Online: https://ljwedin.github.io/DynWebb_01_FrontEnd/
+För att ändra prenumerations-status, tryck på knappen "ändra" som inloggad användare.
+
+## Test-användare
+----------------------
+Användarnamn:   test
+Lösenord:       test
 
 ## Back end-repo
 ----------------------
