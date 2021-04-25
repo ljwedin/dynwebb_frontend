@@ -1,6 +1,9 @@
 import toggleNewsletter from './toggleNewsletter.js';
 import logoutUser from './logoutUser.js';
 
+// Grabs id from localStorage, sends POST to recieve user info from server
+// Renders HTML based on fetch response, shows error in log if request failed
+
 export default async function renderUserInfo () {
     const id = { id: localStorage.getItem('id') };
     const contentDiv = document.querySelector('.content');

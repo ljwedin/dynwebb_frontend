@@ -1,5 +1,7 @@
 import renderUserInfo from './renderUserInfo.js';
 
+// Grabs input from HTML and asks the database to switch
+
 export default async function toggleNewsletter () {
     let newsletter;
     let string = document.getElementById('newsletterText').innerText;

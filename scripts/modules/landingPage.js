@@ -2,6 +2,8 @@ import renderUserInfo from './renderUserInfo.js';
 import renderRegistrationPage from './regUser.js';
 import login from './loginUser.js';
 
+// Renders landing page / login page based on if id stored or not
+
 export default function landingPage () {
     if (localStorage.getItem('id')) {
         renderUserInfo();

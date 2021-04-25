@@ -1,3 +1,5 @@
+// Renders page for user input
+
 export default function renderRegistrationPage () {
     const bigHeader = document.querySelector('.bigHeader');
     bigHeader.textContent = 'Registrera ny användare';
@@ -15,6 +17,8 @@ export default function renderRegistrationPage () {
 
     document.getElementById('regUserBtn').addEventListener('click', regUser);
 }
+
+// Grabs data from input fields and posts do database via server POST
 
 async function regUser () {
     const userName = document.getElementById('username').value;

@@ -1,5 +1,7 @@
 import renderUserInfo from './renderUserInfo.js';
 
+// Grabs info from input fields
+
 function getUserInput () {
     const username = document.getElementById('username').value;
     const pass = document.getElementById('password').value;
@@ -11,6 +13,9 @@ function getUserInput () {
 
     return user;
 }
+
+// Passes user input to server via fetch and renders user page
+// Shows error in log if request failed, shows user error message if faulty credentials
 
 export default async function login () {
     let user = getUserInput();
