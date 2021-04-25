@@ -17,7 +17,7 @@ export default async function toggleNewsletter () {
 
     console.log(postNewsletter);
 
-    let url = 'https://dynwebb-01-backend.herokuapp.com/updatenewsletter'
+    let url = 'https://dynwebb-01-backend.herokuapp.com/userpage/updatenewsletter'
 
     let response = await fetch(url, {
         method: 'POST',
